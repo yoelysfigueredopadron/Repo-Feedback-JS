@@ -1,8 +1,13 @@
 // Por buenas prácticas debes tratar de crear las variables y constantes globales al inicio de tu archivo js, si son locales entonces dentro de la función o el bloque de código donde las necesites
 const solicitudAmistad1 = 'Juan Manuel Vega';
-const solicitudAmistad2 = ' Maria Elena Martinez ';
-const solicitudAmistad3 = ' Rodrigo Benitez ';
+const solicitudAmistad2 = 'Maria Elena Martinez';
+const solicitudAmistad3 = 'Rodrigo Benitez';
 let nombreDelUser; // puedes llamar la variable (nombreUser, user) el nombre que creaste está correcto pero si puedes hacer que sean más cortos y descriptivos mucho mejor.
+let listaAmigos = [];
+
+listaAmigos.push(solicitudAmistad1);
+listaAmigos.push(solicitudAmistad2);
+listaAmigos.push(solicitudAmistad3);
 
 nombreDelUser = prompt('Ingrese su Nombre de Usuario');
 
@@ -37,3 +42,7 @@ if (notaDelUser.length < 30) {
 // }
 
 // confirm = (`El usuario te ha enviado una solicitud de amistad` )
+
+for (let i = 0; i < listaAmigos.length; i++) {
+	confirm(`El usuario ${listaAmigos[i]} te envio una solicitud de amistad`);
+}

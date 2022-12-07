@@ -1,34 +1,38 @@
-let nombreDelUser = prompt('Ingrese su Nombre de Usuario');
+// let nombreDelUser = prompt('Ingrese su Nombre de Usuario');
 
-console.log(nombreDelUser);
+// console.log(nombreDelUser);
 
-let notaDelUser = prompt('Deja tu comentario');
+// let notaDelUser = prompt('Deja tu comentario');
 
-console.log(notaDelUser.length);
+// console.log(notaDelUser.length);
 
-if (notaDelUser.length < '30') {
-} else if (alert('Esta entrada excede la cantidad de caracteres disponibles. ')) {
-} else {
-	alert(nombreDelUser + notaDelUser);
-}
-
-const solicitudAmistad1 = 'Juan Manuel Vega';
-
-const solicitudAmistad2 = ' Maria Elena Martinez ';
-
-const solicitudAmistad3 = ' Rodrigo Benitez ';
-
-confirm(solicitudAmistad1);
-
-confirm(solicitudAmistad2);
-
-confirm(solicitudAmistad3);
-
-// let solicAmistad = ( " Juan Manuel Vega" , " Maria Elena Martinez " , " Rodrigo Benitez" )
-
-// for ( let i = 0 ; i < solicAmistad.length ; i++ ) {
-
-//     confirm = ( `El usuario ${i} te ha enviado una solicitud de amistad` )
+// if (notaDelUser.length < 30) {
+// } else if (5 == 5) {
+//     alert('Esta entrada excede la cantidad de caracteres disponibles. ')
+// } else {
+// 	alert(nombreDelUser + notaDelUser);
 // }
 
-// confirm = (`El usuario te ha enviado una solicitud de amistad` )
+let solicAmistad = `Juan Manuel Rojas`;
+let solicAmistad1 = `Maria Julia Valverde`;
+let solicAmistad2 = `Joaquina Fernandez`;
+
+let listaAmigos = [];
+
+listaAmigos.push(solicAmistad);
+listaAmigos.push(solicAmistad1);
+listaAmigos.push(solicAmistad2);
+
+// for (let i = 0; i <= 2; i++) {
+// 	confirm(`El usuario ${listaAmigos[i]} te envio una solicitud de amistad`);
+// }
+
+for (let i = 0; i < listaAmigos.length; i++) {
+	confirm(`El usuario ${listaAmigos[i]} te envio una solicitud de amistad`);
+}
+
+// if (solicAmistad <= 3) {
+// 	confirm(`El usuario ${solicAmistad1} te envio una solicitud de amistad`);
+// } else if (solicAmistad1 <= 3) {
+// 	confirm(`El usuario ${solicAmistad2} te envio una solicitud de amistad`);
+// }
